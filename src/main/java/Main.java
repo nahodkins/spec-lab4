@@ -1,6 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        MyClass myClass = new MyClass();
+        myClass.getNestedClass().printMyClassVariables();
+
+        MyClass.MyStaticInnerClass myStaticInnerClass = new MyClass.MyStaticInnerClass();
+        myStaticInnerClass.printMyClassVariables();
     }
 }
