@@ -15,12 +15,19 @@ public class Main {
                 () -> System.out.println("Third implementation")
         );
         implementations.forEach(MyInterface::doSomeStaff);
-
+        System.out.println();
         new MyAbstractClass(){
-            @Override
-            public void sayHello() {
-                System.out.println("Hello");
+
+            {
+                this.sayHello();
+                this.doSomeStaff();
+                this.sayGoodbye();
             }
-        }.sayHello();
+
+            @Override
+            public void doSomeStaff() {
+                System.out.println("2 + 2 = " + (2 + 2));
+            }
+        };
     }
 }

@@ -1,4 +1,12 @@
 public abstract class MyAbstractClass {
 
-    public abstract void sayHello();
+    public void sayHello() {
+        System.out.println("Hello!");
+    }
+
+    public abstract void doSomeStaff();
+
+    public void sayGoodbye() {
+        System.out.println("GoodBye!");
+    }
 }
