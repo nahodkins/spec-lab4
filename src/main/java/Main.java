@@ -6,5 +6,8 @@ public class Main {
 
         System.out.println(adam);
         System.out.println(john);
+
+        adam.setAge(21);
+        System.out.println("Adam's age: " + adam.getAge());
     }
 }
