@@ -19,9 +19,9 @@ public class Main {
         new MyAbstractClass(){
 
             {
-                this.sayHello();
-                this.doSomeStaff();
-                this.sayGoodbye();
+                sayHello();
+                doSomeStaff();
+                sayGoodbye();
             }
 
             @Override
