@@ -11,6 +11,14 @@ public class MyClass {
         return nestedClass;
     }
 
+    public void sayHello() {
+        System.out.println("Hello");
+    }
+
+    public static void sayHelloStatic() {
+        System.out.println("Hello static");
+    }
+
     public class MyNestedClass {
         private int integer;
 
@@ -19,6 +27,9 @@ public class MyClass {
             System.out.println("MyNestedClass integer: " + integer);
             System.out.println("String: " + string);
             System.out.println("LocalDate: " + localDate);
+
+            sayHello();
+            sayHelloStatic();
         }
     }
 
@@ -29,6 +40,9 @@ public class MyClass {
 //            System.out.println("MyNestedClass integer: " + MyClass.this.integer);
 //            System.out.println("String: " + string);
             System.out.println("LocalDate: " + localDate);
+
+//            sayHello();
+            sayHelloStatic();
         }
     }
 }
