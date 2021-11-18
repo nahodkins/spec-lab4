@@ -1,4 +1,4 @@
 public interface MyInterface {
 
-    void doSomeStaff();
+    void doSomething();
 }

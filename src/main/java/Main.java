@@ -8,24 +8,24 @@ public class Main {
                 () -> System.out.println("First implementation"),
                 new MyInterface() {
                     @Override
-                    public void doSomeStaff() {
+                    public void doSomething() {
                         System.out.println("Second implementation");
                     }
                 },
                 () -> System.out.println("Third implementation")
         );
-        implementations.forEach(MyInterface::doSomeStaff);
+        implementations.forEach(MyInterface::doSomething);
         System.out.println();
         new MyAbstractClass(){
 
             {
                 sayHello();
-                doSomeStaff();
+                doSomething();
                 sayGoodbye();
             }
 
             @Override
-            public void doSomeStaff() {
+            public void doSomething() {
                 System.out.println("2 + 2 = " + (2 + 2));
             }
         };

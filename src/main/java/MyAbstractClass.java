@@ -4,7 +4,7 @@ public abstract class MyAbstractClass {
         System.out.println("Hello!");
     }
 
-    public abstract void doSomeStaff();
+    public abstract void doSomething();
 
     public void sayGoodbye() {
         System.out.println("GoodBye!");
